@@ -1,0 +1,273 @@
+
+:root {
+  /* 
+   *===============================================
+   * COLORS 
+   *===============================================
+   */
+  /* Primary [Neutrals] */
+  /* White: White is used for most backgrounds. It emphasizes Paradox's clean, bright design. */
+  --white: oklch(1 0 0);
+  /* Charcoal: Charcoal is used for headlines, body text, and labels. 
+   * Good for text legibility and establishing hierarchy. Previously named "Almost Black".
+   */
+  --charcoal: oklch(44.95% 0 0);
+
+  /* Primary [Accent]
+   * Our main secondary color is Olivia Blue. 
+   * Olivia blue is key in creating brand consistency and functioning as an accent color to 
+   * establish heirarchy since our color palette is limited.
+   */
+
+  /* Olivia Blue: Olivia Blue should be used as an accent in order to bring attention to 
+   * important items like buttons or active states. 
+   */
+  --olivia-blue: oklch(76.21% 0.1238 199.53);
+  /* Olivia Blue Dark: Olivia Blue 700 (previously "Darker") is used for button hover, and focus. This color is a shade of Olivia Blue. */
+  --olivia-blue-dark: oklch(69.99% 0.1177 199.08);
+  /* Olivia Blue T600: Previously named Olivia Blue Disabled. Used for disabled state color for Olivia Blue. */
+  --olivia-blue-t600: oklch(89.65% 0.0426 200.08);
+  /* Olivia Blue T700: Previously named Olivia Blue Light. Used as the chat border for Olivia's chat responses. */
+  --olivia-blue-t700: oklch(93.87% 0.0412 194.6);
+  /* Olivia Blue T900: Tint of Olivia Blue. Used as an intermediary background tint. Used in Calendar Picker component multi-date selection. */
+  --olivia-blue-t900: oklch(97.41% 0.024 193.59);
+  /* Olivia Blue T950: Previously named Olivia Blue Lightest. Lightest tint of Olivia Blue. Used as a background tint.  Use case is background color for Olivia's chat responses. */
+  --olivia-blue-t950: oklch(99.4% 0.0084 197.02);
+
+  /* Secondary [Accent] */
+  /* Midnight Teal: Midnight Teal is a darker accent color typically used for Scheduling and Events (as icons, buttons, pills etc.). */
+  --midnight-teal: oklch(45.74% 0.0442 212.89);
+
+  /* Secondary [Greys] */
+
+  /* 
+   * Earl Grey: Light grey can be used for headlines or text that is less important in context hierarchy. 
+   * Icons can also use this color. 
+   */
+  --earl-grey: oklch(73.48% 0 0);
+  /* Steel Grey: Darkest grey border. */
+  --steel-grey: oklch(89.41% 0.0059 264.53);
+  /* Glitter Grey: Divider used for border color around candidate responses as well as divider cells. */
+  --glitter-grey: oklch(94.61% 0 0);
+  /* Disco Grey: Used as the chat border for Olivia's chat responses. */
+  --disco-grey: oklch(96.12% 0 0);
+  /* Fog Grey: Originally called Grayfield 1, Fog Grey is used mainly as a background color. 
+   * Specifically found as the field color for candidate responses in chat.
+   */
+  --fog-grey: oklch(97.91% 0 0);
+  /* Mist Grey: Almost white, lightest grey background. */
+  --mist-grey: oklch(99.11% 0 0);
+
+  /* Tertiary [Feedback] These are feedback colors and should be used super sparingly. */
+  /* Danger Red: Used as a high alert color to warn users of something like canceling an action or deleting. */
+  --danger-red: oklch(59.84% 0.2183 26.95);
+  --danger-red-dark: oklch(51.43% 0.1982 27.93);
+  --danger-red-t300: oklch(86.82% 0.0619 18.42);
+  --danger-red-t900: oklch(95.88% 0.0174 17.46);
+
+  /* Caution Yellow: Used as a high alert color to caution users of something like missing information. */
+  --caution-yellow: oklch(83.18% 0.1415 78.93);
+  --caution-yellow-dark: oklch(71.63% 0.155286 69.8688);
+  --caution-yellow-t300: oklch(88.3% 0.103 81.51);
+  --caution-yellow-t900: oklch(97.53% 0.0215 83.26);
+
+  /* Go Green: Used as a high alert color to congratulate users of a successful interaction like a save action. */
+  --go-green: oklch(76.48% 0.1786 152.81);
+  --go-green-dark: oklch(65.17% 0.1578 152.1);
+  --go-green-t600: oklch(90.03% 0.0752 158.74);
+  --go-green-t900: oklch(96.98% 0.0222 160.24);
+
+  /* Tertiary [Users] 
+   * These are user colors and should be used super sparingly. Each color has a specific use case to a type of user in the CEM.
+   */
+  /* Cactus Green: Used for avatars to indicate employee user type. */
+  --cactus-green: oklch(76.67% 0.1315 173.52);
+  --cactus-green-dark: oklch(49.15% 0.0795 220.12);
+  --cactus-green-t400: oklch(85.07% 0.0914 177.19);
+  --cactus-green-t800: oklch(94.72% 0.0316 179.45);
+  /*
+   *===============================================
+   * TYPOGRAPHY
+   *===============================================
+   */
+  /* Font Family */
+  --font-family-sans: "Open Sans", sans-serif;
+  --font-family-mono: "SF Mono", "Monaco", "Inconsolata", "Fira Mono", "Droid Sans Mono", "Source Code Pro", monospace;
+
+  /* Font Sizes */
+  --header-1-font-size: 1.25rem;
+  --header-1-line-height: 1.75rem;
+  --header-1-font-weight: 600;
+
+  --header-2-font-size: 1rem;
+  --header-2-line-height: 1.375rem;
+  --header-2-font-weight: 600;
+
+  --body-font-size: 0.875rem;
+  --body-line-height: 1.25rem;
+  --body-font-weight: 400;
+
+  --button-font-size: 0.875rem;
+  --button-sm-font-size: 0.75rem;
+  --button-line-height: 1rem;
+  --button-font-weight: 600;
+
+  --link-font-size: 0.875rem;
+  --link-line-height: 1.25rem;
+  --link-font-weight: 600;
+
+  --subtitle-font-size: 0.875rem;
+  --subtitle-mini-font-size: 0.75rem;
+  --subtitle-line-height: 1rem;
+  --subtitle-font-weight: 600;
+
+  --input-lg-font-size: 1rem;
+  --input-lg-line-height: 1.375rem;
+  --input-lg-font-weight: 400;
+
+  --input-sm-font-size: 0.875rem;
+  --input-sm-line-height: 1.25rem;
+  --input-sm-font-weight: 400;
+
+  --tab-label-font-size: 0.875rem;
+  --tab-label-line-height: 1rem;
+  --tab-label-font-weight: 600;
+
+  --avatar-font-size: 0.875rem;
+  --avatar-line-height: 1rem;
+  --avatar-font-weight: 700;
+
+  --avatar-sm-font-size: 0.625rem;
+  --avatar-sm-line-height: 0.875;
+  --avatar-sm-font-weight: 600;
+
+  --tooltip-font-size: 0.75rem;
+  --tooltip-line-height: 1rem;
+  --tooltip-font-weight: 600;
+
+
+  /* 
+   *===============================================
+   * SPACING
+   *===============================================
+   */
+  --spacing-3xs: 0.125rem;
+  --spacing-2xs: 0.25rem;
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 2.5rem;
+  --spacing-2xl: 3rem;
+  --spacing-3xl: 3.5rem;
+
+
+  /* 
+   *===============================================
+   * BORDER
+   *===============================================
+   */
+  --border-radius-3xs: 0.125rem;
+  --border-radius-2xs: 0.25rem;
+  --border-radius-xs: 0.5rem;
+  --border-radius-sm: 0.75rem;
+  --border-radius-md: 1rem;
+}
+
+@theme inline {
+  /* Colors */
+  --color-background: var(--white);
+  --color-foreground: var(--charcoal);
+  --color-border: var(--steel-grey);
+  --color-ring: var(--steel-grey);
+
+  --color-olivia-blue: var(--olivia-blue);
+  --color-olivia-blue-dark: var(--olivia-blue-dark);
+  --color-olivia-blue-t600: var(--olivia-blue-t600);
+  --color-olivia-blue-t700: var(--olivia-blue-t700);
+  --color-olivia-blue-t900: var(--olivia-blue-t900);
+  --color-olivia-blue-t950: var(--olivia-blue-t950);
+
+  --color-midnight-teal: var(--midnight-teal);
+
+  --color-earl-grey: var(--earl-grey);
+  --color-steel-grey: var(--steel-grey);
+  --color-glitter-grey: var(--glitter-grey);
+  --color-disco-grey: var(--disco-grey);
+  --color-fog-grey: var(--fog-grey);
+  --color-mist-grey: var(--mist-grey);
+
+  --color-danger-red: var(--danger-red);
+  --color-danger-red-dark: var(--danger-red-dark);
+  --color-danger-red-t300: var(--danger-red-t300);
+  --color-danger-red-t900: var(--danger-red-t900);
+
+  --color-caution-yellow: var(--caution-yellow);
+  --color-caution-yellow-dark: var(--caution-yellow-dark);
+  --color-caution-yellow-t300: var(--caution-yellow-t300);
+  --color-caution-yellow-t900: var(--caution-yellow-t900);
+
+  --color-go-green: var(--go-green);
+  --color-go-green-dark: var(--go-green-dark);
+  --color-go-green-t600: var(--go-green-t600);
+  --color-go-green-t900: var(--go-green-t900);
+
+  --color-cactus-green: var(--cactus-green);
+  --color-cactus-green-dark: var(--cactus-green-dark);
+  --color-cactus-green-t400: var(--cactus-green-t400);
+  --color-cactus-green-t800: var(--cactus-green-t800);
+
+  /* Typography */
+  --font-sans: var(--font-family-sans);
+  --font-mono: var(--font-family-mono);
+
+  --text-base: var(--body-font-size);
+  --text-base--line-height: var(--body-line-height);
+
+  --text-h1: var(--header-1-font-size);
+  --text-h1--line-height: var(--header-1-line-height);
+  --text-h2: var(--header-2-font-size);
+  --text-h2--line-height: var(--header-2-line-height);
+  --text-body: var(--body-font-size);
+  --text-body--line-height: var(--body-line-height);
+  --text-button: var(--button-font-size);
+  --text-button--line-height: var(--button-line-height);
+  --text-button-sm: var(--button-sm-font-size);
+  --text-button-sm--line-height: var(--button-line-height);
+  --text-link: var(--link-font-size);
+  --text-link--line-height: var(--link-line-height);
+  --text-subtitle: var(--subtitle-font-size);
+  --text-subtitle--line-height: var(--subtitle-line-height);
+  --text-subtitle-mini: var(--subtitle-mini-font-size);
+  --text-subtitle-mini--line-height: var(--subtitle-mini-line-height);
+  --text-input-lg: var(--input-lg-font-size);
+  --text-input-lg--line-height: var(--input-lg-line-height);
+  --text-input-sm: var(--input-sm-font-size);
+  --text-input-sm--line-height: var(--input-sm-line-height);
+  --text-tab-label: var(--tab-label-font-size);
+  --text-tab-label--line-height: var(--tab-label-line-height);
+  --text-avatar: var(--avatar-font-size);
+  --text-avatar-sm: var(--avatar-sm-font-size);
+  --text-avatar-sm--line-height: var(--avatar-sm-line-height);
+  --text-tooltip: var(--tooltip-font-size);
+  --text-tooltip--line-height: var(--tooltip-line-height);
+
+
+  /* Border */
+  --shadow-border: 0px 0px 0px 1px rgba(0, 0, 0, 0.05), 0px 2px 4px 0px rgba(0, 0, 0, 0.05), 0px 0px 0px 0px rgba(0, 0, 0, 0.20);
+  --shadow-border-hover: 0px 0px 0px 1px var(--olivia-blue-t600), 0px 2px 4px 0px rgba(0, 0, 0, 0.10), 0px 0px 0px 0px rgba(0, 0, 0, 0.20);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  html, body, #root {
+    @apply size-full;
+  }
+}
